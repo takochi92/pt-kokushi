@@ -168,3 +168,4 @@ select { font: inherit; padding: 9px 12px; border: 1px solid var(--line); backgr
   .panel { padding: 16px; }
   .hero { padding: 30px 0 28px; }
 }
+.history th { white-space: nowrap; }
