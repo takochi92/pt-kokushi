@@ -1,0 +1,12 @@
+{
+  "name": "pt-kokushi",
+  "version": "1.0.0",
+  "private": true,
+  "description": "理学療法士 国家試験対策サイト「PT国試ドリル」",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "serve": "python3 -m http.server 8000 -d dist"
+  }
+}

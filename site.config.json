@@ -1,0 +1,7 @@
+{
+  "note": "siteUrl は公開URL（最後の / なし）。独自ドメインにしたらここを変える。noteUser は note のID（note.com/〇〇 の〇〇）。membershipUrl を入れるとメンバーシップ・マガジンへの案内ボタンになる。gaId に G- から始まる測定IDを入れると Google アナリティクスが入る。",
+  "siteUrl": "https://takochi92.github.io/pt-kokushi",
+  "noteUser": "8192844",
+  "membershipUrl": "",
+  "gaId": ""
+}
