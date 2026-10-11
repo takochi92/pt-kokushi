@@ -27,3 +27,7 @@ npm run serve      # http://localhost:8000
 ```
 
 GitHub → Settings → Pages → Source を「GitHub Actions」にすると、`main` への push と毎朝 7:13 に自動で公開される（note の記事もそのとき更新）。
+
+## note の公開データ
+
+`scripts/note-stats.mjs` が note の公開データ（記事ごとのスキ数・コメント数・価格・公開日）を集め、毎朝の自動更新のときに `stats` ブランチの `note-stats.json` に保存する。閲覧数・売上はログインが必要なので取れない。note の公式APIではないため、取れないときは空のまま続行する。

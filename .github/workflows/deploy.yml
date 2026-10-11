@@ -31,6 +31,26 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
+  # note の公開データ（スキ数など）を stats ブランチに保存する。編集部ページの分析タブに社長が反映する
+  note-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/note-stats.mjs > "$RUNNER_TEMP/note-stats.json"
+      - name: Save to stats branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git fetch --depth 1 origin stats; then git switch -c stats FETCH_HEAD; else git switch --orphan stats; git rm -rf --quiet . || true; fi
+          cp "$RUNNER_TEMP/note-stats.json" note-stats.json
+          git add note-stats.json
+          git diff --cached --quiet || git commit -m "note の公開データ $(date -u +%Y-%m-%d)"
+          git push origin stats
   deploy:
     needs: build
     runs-on: ubuntu-latest
