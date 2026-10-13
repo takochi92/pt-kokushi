@@ -1,8 +1,16 @@
 {
   "user": "8192844",
-  "fetchedAt": "2026-10-12T01:18:22.708Z",
+  "fetchedAt": "2026-10-13T00:12:28.599Z",
   "ok": true,
   "articles": [
+    {
+      "title": "Brunnstromステージで迷う実習生へ。上肢・手指・下肢の見分け方と、書きかえて使える記録例",
+      "url": "https://note.com/8192844/n/nb4d7e4392f11",
+      "likes": 0,
+      "comments": 0,
+      "price": 0,
+      "publishedAt": "2026-10-12T11:04:12+09:00"
+    },
     {
       "title": "ICFの問題点、どの欄に書くか迷う実習生へ。よくある間違い5つと直し方",
       "url": "https://note.com/8192844/n/n13c1ca5a1561",
@@ -69,7 +77,7 @@
     }
   ],
   "totals": {
-    "articles": 8,
+    "articles": 9,
     "likes": 3,
     "comments": 0,
     "paid": 1
