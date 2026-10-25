@@ -1,6 +1,6 @@
 {
   "user": "8192844",
-  "fetchedAt": "2026-10-24T00:37:30.495Z",
+  "fetchedAt": "2026-10-25T00:18:53.720Z",
   "ok": true,
   "articles": [
     {
@@ -38,7 +38,7 @@
     {
       "title": "人工膝関節置換術（TKA）後の症例レジュメを、評価から考察まで全部書いてみた",
       "url": "https://note.com/8192844/n/n6d384915185b",
-      "likes": 0,
+      "likes": 1,
       "comments": 0,
       "price": 0,
       "publishedAt": "2026-10-10T09:45:33+09:00"
@@ -86,7 +86,7 @@
   ],
   "totals": {
     "articles": 10,
-    "likes": 4,
+    "likes": 5,
     "comments": 0,
     "paid": 1
   }
